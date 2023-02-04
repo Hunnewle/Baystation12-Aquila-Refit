@@ -389,38 +389,57 @@
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
 	dynamic_lighting = 1
+	lighting_tone = AREA_LIGHTING_COOL //temp, reviewing
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_HIDE_FROM_HOLOMAP
 	base_turf_special_handling = TRUE
+	//Area icon states adjusted for clarity, temporary pending review
 
 /area/aquila/cockpit
 	name = "\improper SEV Aquila - Cockpit"
 	req_access = list(access_aquila)
+	icon_state = "bridge" //temp
 
 /area/aquila/power
 	name = "\improper SEV Aquila - Engineering Compartment"
 	req_access = list(access_solgov_crew)
-
-/area/aquila/storage
-	name = "\improper SEV Aquila - Storage Bay"
-	req_access = list(access_solgov_crew)
+	icon_state = "engineering" //temp
+	lighting_tone = AREA_LIGHTING_WARM //Testing, see parent
+	turf_initializer = /singleton/turf_initializer/maintenance //Testing
 
 /area/aquila/suits
 	name = "\improper SEV Aquila - Suit Storage Compartment"
 	req_access = list(access_aquila)
 
-/area/aquila/air
-	name = "\improper SEV Aquila - Life Support Compartment"
-
 /area/aquila/crew
 	name = "\improper SEV Aquila - Crew Compartment"
+	icon_state = "crew_quarters" //temp
 
 /area/aquila/medical
 	name = "\improper SEV Aquila - Medical Compartment"
-	lighting_tone = AREA_LIGHTING_COOL
+	icon_state = "medbay3" //temp
+	//lighting_tone = AREA_LIGHTING_COOL temp, see parent
 
 /area/aquila/airlock
 	name = "\improper SEV Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
+
+/area/aquila/central
+	name = "\improper SEV Aquila - Central Compartment"
+	icon_state = "hallC1"
+
+/area/aquila/external
+	name = "\improper SEV Aquila - External"
+
+/*
+
+/area/aquila/storage
+	name = "\improper SEV Aquila - Storage Bay"
+	req_access = list(access_solgov_crew)
+
+/area/aquila/air
+	name = "\improper SEV Aquila - Life Support Compartment"
+
+*/
 
 //Guppy
 

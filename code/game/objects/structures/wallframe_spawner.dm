@@ -150,6 +150,10 @@
 	win_path = /obj/structure/window/reinforced/polarized/full
 	var/id
 
+/obj/effect/wallframe_spawn/reinforced/polarized/titanium
+	name = "polarized reinforced titanium wall frame window spawner"
+	frame_path = /obj/structure/wall_frame/titanium
+
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille
 	name = "polarized reinforced wall frame window spawner (no grille)"
 	grille_path = null
