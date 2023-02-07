@@ -441,7 +441,7 @@ TORCH_ESCAPE_POD(17)
 	shuttle_area = list(/area/aquila/cockpit, /area/aquila/power, /area/aquila/suits, /area/aquila/crew, /area/aquila/medical, /area/aquila/airlock, /area/aquila/central, /area/aquila/external)
 	current_location = "nav_hangar_aquila"
 	landmark_transition = "nav_transit_aquila"
-	dock_target = "aquila_shuttle"
+	dock_target = "aquila_portside"
 	range = 2
 	logging_home_tag = "nav_hangar_aquila"
 	logging_access = access_aquila_helm

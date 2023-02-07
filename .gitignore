@@ -56,3 +56,6 @@ package-lock.json
 
 # ignore local selected map
 /maps/using.dm
+config/example/admins.txt
+config/example/config.txt
+config/names/first_male.txt
